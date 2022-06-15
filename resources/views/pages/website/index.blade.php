@@ -1,24 +1,24 @@
-@extends('layouts.web_master')
+@extends('layouts.web_master', ['pageName' => 'home'])
 @section('main_content')
-<main>
 <!-- Revolution slider start -->
-  @include('layouts.partials.web_slider')
-  <!-- Revolution slider end --> 
+@include('layouts.partials.web_slider')
+<!-- Revolution slider end --> 
+<main>
   
   <!--What we do Start-->
   <div class="what_we-do_wrap">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="what_we_img"><img src="images/fitness.jpg" alt=""></div>
+          <div class="what_we_img"><img src="{{ asset('website/assets/images/fitness.jpg') }}" alt=""></div>
           <h3>Fitness Center</h3>
         </div>
         <div class="col-lg-4">
-          <div class="what_we_img"><img src="images/training.jpg" alt=""></div>
+          <div class="what_we_img"><img src="{{ asset('website/assets/images/training.jpg') }}" alt=""></div>
           <h3>Trainning Center</h3>
         </div>
         <div class="col-lg-4">
-          <div class="what_we_img"><img src="images/yoga.jpg" alt=""></div>
+          <div class="what_we_img"><img src="{{ asset('website/assets/images/yoga.jpg') }}" alt=""></div>
           <h3>Yoga Center</h3>
         </div>
       </div>
@@ -39,7 +39,7 @@
           <div class="readmore"><a href="#">Read More <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></div>
         </div>
         <div class="col-lg-5">
-          <div class="aboutImg"><img src="images/aboutImg.jpg"></div>
+          <div class="aboutImg"><img src="{{ asset('website/assets/images/aboutImg.jpg') }}"></div>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
             <!--Default Portfolio Item-->
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all fitness">
               <div class="inner-box">
-                <div class="image-box"><img src="images/gallery01.jpg" alt=""></div>
+                <div class="image-box"><img src="{{ asset('website/assets/images/gallery01.jpg') }}" alt=""></div>
                 <!--Overlay Box-->
                 <div class="overlay-box">
                   <div class="overlay-inner">
@@ -100,13 +100,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="images/gallery01.jpg" class="fancybox image-link" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
+                <a href="{{ asset('website/assets/images/gallery01.jpg') }}" class="fancybox image-link" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
             </div>
             
             <!--Default Portfolio Item-->
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all yoga  gym">
               <div class="inner-box">
-                <div class="image-box"><img src="images/gallery05.jpg" alt=""></div>
+                <div class="image-box"><img src="{{ asset('website/assets/images/gallery05.jpg') }}" alt=""></div>
                 <!--Overlay Box-->
                 <div class="overlay-box">
                   <div class="overlay-inner">
@@ -115,13 +115,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="images/gallery05.jpg" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
+                <a href="{{ asset('website/assets/images/gallery05.jpg') }}" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
             </div>
             
             <!--Default Portfolio Item-->
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all yoga gym">
               <div class="inner-box">
-                <div class="image-box"><img src="images/gallery03.jpg" alt=""></div>
+                <div class="image-box"><img src="{{ asset('website/assets/images/gallery03.jpg') }}" alt=""></div>
                 <!--Overlay Box-->
                 <div class="overlay-box">
                   <div class="overlay-inner">
@@ -130,13 +130,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="images/gallery03.jpg" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
+                <a href="{{ asset('website/assets/images/gallery03.jpg') }}" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
             </div>
             
             <!--Default Portfolio Item-->
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all running gym yoga">
               <div class="inner-box">
-                <div class="image-box"><img src="images/gallery04.jpg" alt=""></div>
+                <div class="image-box"><img src="{{ asset('website/assets/images/gallery04.jpg') }}" alt=""></div>
                 <!--Overlay Box-->
                 <div class="overlay-box">
                   <div class="overlay-inner">
@@ -145,13 +145,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="images/gallery04.jpg" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
+                <a href="{{ asset('website/assets/images/gallery04.jpg') }}" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
             </div>
             
             <!--Default Portfolio Item-->
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all fitness running">
               <div class="inner-box">
-                <div class="image-box"><img src="images/gallery02.jpg" alt=""></div>
+                <div class="image-box"><img src="{{ asset('website/assets/images/gallery02.jpg') }}" alt=""></div>
                 <!--Overlay Box-->
                 <div class="overlay-box">
                   <div class="overlay-inner">
@@ -160,13 +160,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="images/gallery02.jpg" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
+                <a href="{{ asset('website/assets/images/gallery02.jpg') }}" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
             </div>
             
             <!--Default Portfolio Item-->
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all gym yoga">
               <div class="inner-box">
-                <div class="image-box"><img src="images/gallery06.jpg" alt=""></div>
+                <div class="image-box"><img src="{{ asset('website/assets/images/gallery06.jpg') }}" alt=""></div>
                 <!--Overlay Box-->
                 <div class="overlay-box">
                   <div class="overlay-inner">
@@ -175,7 +175,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="images/gallery06.jpg" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
+                <a href="{{ asset('website/assets/images/gallery06.jpg') }}" class="image-link fancybox" data-fancybox="images" title="Image Caption Here"><i class="fa fa-plus" aria-hidden="true"></i></a> </div>
             </div>
           </div>
         </div>
@@ -195,21 +195,21 @@
       <ul class="owl-carousel classessWrp">
         <li class="item">
           <div class="classInfo">
-            <div class="classImg"><img src="images/weight-lifting.jpg" alt=""></div>
+            <div class="classImg"><img src="{{ asset('website/assets/images/weight-lifting.jpg') }}" alt=""></div>
             <h3><a href="class-details.html">Yoga Class</a></h3>
             <div class="author"> <span><i class="fa fa-user" aria-hidden="true"></i> Jhon Carry</span> <span><i class="fa fa-clock-o" aria-hidden="true"></i> 08:00 AM</span> </div>
           </div>
         </li>
         <li class="item">
           <div class="classInfo">
-            <div class="classImg"><img src="images/running.jpg" alt=""></div>
+            <div class="classImg"><img src="{{ asset('website/assets/images/running.jpg') }}" alt=""></div>
             <h3><a href="class-details.html">Weight Lifting Class</a></h3>
             <div class="author"> <span><i class="fa fa-user" aria-hidden="true"></i> Jhon Carry</span> <span><i class="fa fa-clock-o" aria-hidden="true"></i> 08:00 AM</span> </div>
           </div>
         </li>
         <li class="item">
           <div class="classInfo">
-            <div class="classImg"><img src="images/weight.jpg" alt=""></div>
+            <div class="classImg"><img src="{{ asset('website/assets/images/weight.jpg') }}" alt=""></div>
             <h3><a href="class-details.html">Running Class</a></h3>
             <div class="author"> <span><i class="fa fa-user" aria-hidden="true"></i> Jhon Carry</span> <span><i class="fa fa-clock-o" aria-hidden="true"></i> 08:00 AM</span> </div>
           </div>
@@ -278,7 +278,7 @@
       </div>
       <ul class="row">
         <li class="col-lg-4">
-          <div class="expertImg"><img src="images/expert02.jpg" alt="">
+          <div class="expertImg"><img src="{{ asset('website/assets/images/expert02.jpg') }}" alt="">
             <div class="overlay">
               <h2> <a href="#">View Bio</a> </h2>
               <div class="social-media">
@@ -294,7 +294,7 @@
           <h3>John Doe <span>Fitness Trainer</span></h3>
         </li>
         <li class="col-lg-4">
-          <div class="expertImg"><img src="images/expert01.jpg" alt="">
+          <div class="expertImg"><img src="{{ asset('website/assets/images/expert01.jpg') }}" alt="">
             <div class="overlay">
               <h2> <a href="#">View Bio</a> </h2>
               <div class="social-media">
@@ -310,7 +310,7 @@
           <h3>Selina Stuart <span>Fitness Trainer</span></h3>
         </li>
         <li class="col-lg-4">
-          <div class="expertImg"><img src="images/expert03.jpg" alt="">
+          <div class="expertImg"><img src="{{ asset('website/assets/images/expert03.jpg') }}" alt="">
             <div class="overlay">
               <h2> <a href="#">View Bio</a> </h2>
               <div class="social-media">
@@ -367,7 +367,7 @@
       </div>
       <ul class="row">
         <li class="col-lg-4">
-          <div class="blogImg"><img src="images/blog01.jpg"></div>
+          <div class="blogImg"><img src="{{ asset('website/assets/images/blog01.jpg') }}"></div>
           <div class="blogInfo">
             <div class="blog_dete">Jan <span>10</span></div>
             <h3><a href="#">Duis eu tempor urna non lorem</a></h3>
@@ -375,7 +375,7 @@
           </div>
         </li>
         <li class="col-lg-4">
-          <div class="blogImg"><img src="images/blog02.jpg"></div>
+          <div class="blogImg"><img src="{{ asset('website/assets/images/blog02.jpg') }}"></div>
           <div class="blogInfo">
             <div class="blog_dete">Jan <span>10</span></div>
             <h3><a href="#">Nam ut diam</a></h3>
@@ -383,7 +383,7 @@
           </div>
         </li>
         <li class="col-lg-4">
-          <div class="blogImg"><img src="images/blog03.jpg"></div>
+          <div class="blogImg"><img src="{{ asset('website/assets/images/blog03.jpg') }}"></div>
           <div class="blogInfo">
             <div class="blog_dete">Jan <span>10</span></div>
             <h3><a href="#">Nulla dignissim porta mauris</a></h3>

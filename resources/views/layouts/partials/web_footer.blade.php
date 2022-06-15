@@ -1,6 +1,6 @@
 <div class="footer-wrap">
     <div class="container footer-container">
-      <div class="footoer-logo"><img src="images/logo.png" alt=""></div>
+      <div class="footoer-logo"><img src="{{ asset('website/assets/images/logo.png') }}" alt=""></div>
       <ul class="footerLinks">
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -42,40 +42,40 @@
   
     <div class="footer-gallery owl-carousel owl-theme">
       <div class="item">
-        <a href="images/instagram/big1.jpg">
-        <img src="images/instagram/1.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big1.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/1.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item ">
-        <a href="images/instagram/big2.jpg">
-        <img src="images/instagram/2.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big2.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/2.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big3.jpg">
-        <img src="images/instagram/3.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big3.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/3.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big4.jpg">
-        <img src="images/instagram/4.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big4.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/4.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big5.jpg">
-        <img src="images/instagram/5.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big5.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/5.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big6.jpg">
-        <img src="images/instagram/6.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big6.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/6.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big4.jpg">
-        <img src="images/instagram/4.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big4.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/4.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big5.jpg">
-        <img src="images/instagram/5.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big5.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/5.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
       <div class="item"> 
-        <a href="images/instagram/big6.jpg">
-        <img src="images/instagram/6.jpg" alt="Instragram img"><i class="fa fa-search"></i></a>
+        <a href="{{ asset('website/assets/images/instagram/big6.jpg') }}">
+        <img src="{{ asset('website/assets/images/instagram/6.jpg') }}" alt="Instragram img"><i class="fa fa-search"></i></a>
       </div>
     </div>
     <!-- Gallery Title -->

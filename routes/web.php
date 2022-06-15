@@ -30,13 +30,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
-
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
+Route::get('/class', [HomeController::class, 'class'])->name('class');
+Route::get('/class/detail/{id}', [HomeController::class, 'classDetail'])->name('classDetail');
+Route::get('/trainers', [HomeController::class, 'trainers'])->name('trainers');
+Route::get('/pricing-table', [HomeController::class, 'pricing_table'])->name('pricing_table');
+Route::get('/testimonial', [HomeController::class, 'testimonial'])->name('testimonial');
+Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
+Route::get('/blog/detail/{id}', [HomeController::class, 'blogDetail'])->name('blogDetail');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 // login
 Route::get('admin', [AuthenticationController::class, 'login'])->name('login');
@@ -89,7 +94,7 @@ Route::group(['middleware' => ['auth']] , function(){
     Route::get('service/delete/{id}', [ServiceController::class, 'serviceDelete'])->name('delete.service');
     
     // Gallery Route
-    Route::get('/galleries', [GalleryController::class, 'gallery'])->name('gallery');
+    Route::get('/galleries', [GalleryController::class, 'gallery'])->name('galleries');
     Route::post('gallery/insert', [GalleryController::class, 'galleryInsert'])->name('store.gallery');
     Route::get('gallery/edit/{id}', [GalleryController::class, 'galleryEdit'])->name('edit.gallery');
     Route::post('gallery/update/{id}', [GalleryController::class, 'galleryUpdate'])->name('update.gallery');
