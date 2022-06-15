@@ -14,6 +14,9 @@ use App\Http\Controllers\Admin\QueryController;
 use App\Http\Controllers\Admin\RegistrationController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SubcategoryController;
+use App\Http\Controllers\HomeController;
+
+
 
 
 /*
@@ -27,9 +30,12 @@ use App\Http\Controllers\Admin\SubcategoryController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
 
 
 // login
