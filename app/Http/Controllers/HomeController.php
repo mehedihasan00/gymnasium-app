@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Slider;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     // index 
     public function index()
-    {
-        return view('pages.website.index');
+    {   
+        $slider = Slider::latest()->get();
+        return view('pages.website.index', compact('slider'));
     }
     // About
     public function about() {

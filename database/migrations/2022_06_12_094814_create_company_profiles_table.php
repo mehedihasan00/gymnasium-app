@@ -27,6 +27,13 @@ class CreateCompanyProfilesTable extends Migration
             $table->string('logo')->nullable();
             $table->string('about_image')->nullable();
             $table->string('bg_image')->nullable();
+            $table->string('fr_title1')->nullable();
+            $table->string('fr_image1')->nullable();
+            $table->string('fr_title2')->nullable();
+            $table->string('fr_image2')->nullable();
+            $table->string('fr_title3')->nullable();
+            $table->string('fr_image3')->nullable();
+
             $table->timestamps();
         });
         // Create a default one 

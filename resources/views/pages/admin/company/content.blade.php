@@ -111,6 +111,57 @@
                                 @enderror
                             </div>
                         </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="fr_title1">Feature Title 1</label>
+                                <input type="text" name="fr_title1" value="{{ $company->fr_title1 }}" class="form-control form-control-sm shadow-none mb-2 @error('fr_title1') is-invalid @enderror" id="fr_title1">
+                                @error('fr_title1')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+
+                                <label for="fr_image1">Feature Image 1</label>
+                                <input class="form-control form-control-sm" id="fr_image1" type="file" name="fr_image1" onchange="readFr1URL(this);">
+                                <div class="form-group mt-2">
+                                    <img class="form-controlo img-thumbnail" src="#" id="previewFr1Image" style="width: 160px;height: 130px;">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                                <label for="fr_title2">Feature Title 2</label>
+                                <input type="text" name="fr_title2" value="{{ $company->fr_title2 }}" class="form-control form-control-sm shadow-none mb-2 @error('fr_title2') is-invalid @enderror" id="fr_title2">
+                                @error('fr_title2')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+                                <label for="fr_image2">Feature Image 2</label>
+                                <input class="form-control form-control-sm" id="fr_image2" type="file" name="fr_image2" onchange="readFr2URL(this);">
+                                <div class="form-group mt-2">
+                                    <img class="form-controlo img-thumbnail" src="#" id="previewFr2Image" style="width: 160px;height: 130px;">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                                <label for="fr_title3">Feature Title 3</label>
+                                <input type="text" name="fr_title3" value="{{ $company->fr_title3 }}" class="form-control form-control-sm shadow-none mb-2 @error('fr_title3') is-invalid @enderror" id="fr_title3">
+                                @error('fr_title3')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+                                <label for="fr_image3">Feature Image 3</label>
+                                <input class="form-control form-control-sm" id="fr_image3" type="file" name="fr_image3" onchange="readFr3URL(this);">
+                                <div class="form-group mt-2">
+                                    <img class="form-controlo img-thumbnail" src="#" id="previewFr3Image" style="width: 160px;height: 130px;">
+                                </div>
+                            </div>
+                        </div>
                         <hr class="mt-0">
                         <div class="clearfix mt-1">
                             <div class="float-md-right">
@@ -182,5 +233,53 @@
         }
     }
     document.getElementById("previewBgImage").src="{{ $company->bg_image }}";
+
+    function readFr1URL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#previewFr1Image')
+                    .attr('src', e.target.result)
+                    .width(160)
+                    .height(130);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    document.getElementById("previewFr1Image").src="{{ $company->fr_image1 }}";
+
+    function readFr2URL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#previewFr2Image')
+                    .attr('src', e.target.result)
+                    .width(160)
+                    .height(130);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    document.getElementById("previewFr2Image").src="{{ $company->fr_image2 }}";
+
+    function readFr3URL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#previewFr3Image')
+                    .attr('src', e.target.result)
+                    .width(160)
+                    .height(130);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    document.getElementById("previewFr3Image").src="{{ $company->fr_image3 }}";
 </script>
 @endpush

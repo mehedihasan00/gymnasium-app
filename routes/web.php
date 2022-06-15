@@ -14,6 +14,8 @@ use App\Http\Controllers\Admin\QueryController;
 use App\Http\Controllers\Admin\RegistrationController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SubcategoryController;
+use App\Http\Controllers\Admin\SliderController;
+
 use App\Http\Controllers\HomeController;
 
 
@@ -106,7 +108,15 @@ Route::group(['middleware' => ['auth']] , function(){
     Route::get('management/edit/{id}', [ManagementController::class, 'edit'])->name('management.edit');
     Route::post('management/update/{id}', [ManagementController::class, 'update'])->name('management.update');
     Route::get('management/delete/{id}', [ManagementController::class, 'delete'])->name('management.delete');
-    
+    //Slider Route
+    Route::get('sliders', [SliderController::class, 'index'])->name('slider.index');
+    Route::post('slider/store', [SliderController::class, 'store'])->name('slider.store');
+    Route::get('slider/edit/{id}', [SliderController::class, 'edit'])->name('slider.edit');
+    Route::post('slider/update/{id}', [SliderController::class, 'update'])->name('slider.update');
+    Route::get('slider/delete/{id}', [SliderController::class, 'delete'])->name('slider.delete');
+
+
+
     Route::get('/messages', [MessageController::class, 'message'])->name('admin.message');
     Route::get('messages/delete/{id}', [MessageController::class, 'messageDelete'])->name('admin.message.delete');
     

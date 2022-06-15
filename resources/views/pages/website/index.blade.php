@@ -10,16 +10,16 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="what_we_img"><img src="{{ asset('website/assets/images/fitness.jpg') }}" alt=""></div>
-          <h3>Fitness Center</h3>
+          <div class="what_we_img"><img src="{{ asset($content->fr_image1) }}" alt=""></div>
+          <h3>{{ $content->fr_title1 }}</h3>
         </div>
         <div class="col-lg-4">
-          <div class="what_we_img"><img src="{{ asset('website/assets/images/training.jpg') }}" alt=""></div>
-          <h3>Trainning Center</h3>
+          <div class="what_we_img"><img src="{{ asset($content->fr_image2) }}" alt=""></div>
+          <h3>{{ $content->fr_title2 }}</h3>
         </div>
         <div class="col-lg-4">
-          <div class="what_we_img"><img src="{{ asset('website/assets/images/yoga.jpg') }}" alt=""></div>
-          <h3>Yoga Center</h3>
+          <div class="what_we_img"><img src="{{ asset($content->fr_image3) }}" alt=""></div>
+          <h3>{{ $content->fr_title3 }}</h3>
         </div>
       </div>
     </div>
